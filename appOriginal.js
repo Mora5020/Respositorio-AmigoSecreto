@@ -17,7 +17,7 @@ function agregarAmigo(){
 function limpiarInput() {
   document.querySelector('#amigo').value ='';   // limpio el input
 }
-document.getElementById('amigo').addEventListener('click', agregarAmigo);
+document.getElementById('botonAgregar').addEventListener('click', agregarAmigo);
 limpiarInput(); // limpio el input al cargar la pagina
 
 //Obtengo el boton por su id y le agrego un event listener que escucha el click
