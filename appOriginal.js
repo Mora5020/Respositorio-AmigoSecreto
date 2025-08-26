@@ -28,6 +28,7 @@ function agregarAmigo() {
         listaAmigxs.push(nombre);
         console.log(listaAmigxs);
         limpiarCampo();
+        mostrarAmigos();
     }
 }
 
