@@ -40,3 +40,8 @@ function verificarAmigo(input) {
     }
     return true;
 }
+
+function limpiarCampo() {
+    document.getElementById('amigo').value = "";
+    return;
+}
