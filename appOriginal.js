@@ -34,6 +34,10 @@ function agregarAmigo() {
 function mostrarAmigos() {
 let lista = document.getElementById('listaAmigos');
 lista.innerHTML = '';
+for (let i = 0; i < listaAmigxs.length; i++) {
+
+}
+
 }
 
 document.getElementById('botonAgregar').addEventListener('click', function() {
