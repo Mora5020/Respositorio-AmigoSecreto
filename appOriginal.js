@@ -58,3 +58,5 @@ function sortearAmigos() {
 document.getElementById('botonAgregar').addEventListener('click', function() {
     agregarAmigo();
 });
+document.getElementById('botonSortear').addEventListener('click', function() {
+    sortearAmigos(); });
