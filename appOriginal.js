@@ -1,8 +1,5 @@
 let listaAmigxs = [];
 
-
-
-
 function obtenerNombre() {
     let input = document.getElementById('amigo').value.trim();
     console.log(input);
@@ -34,6 +31,10 @@ function agregarAmigo() {
     }
 }
 
+function mostrarAmigos() {
+let lista = document.getElementById('listaAmigos');
+
+}
 
 document.getElementById('botonAgregar').addEventListener('click', function() {
     agregarAmigo();
