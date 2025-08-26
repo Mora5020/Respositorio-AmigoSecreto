@@ -49,6 +49,8 @@ function sortearAmigos() {
         alert('No agregaste amigos para sortear');
         return;
     }
+    let indice = Math.floor(Math.random() * listaAmigxs.length);
+    let amigoSorteado = listaAmigxs[indice];
 }
 
 document.getElementById('botonAgregar').addEventListener('click', function() {
