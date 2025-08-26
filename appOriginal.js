@@ -44,13 +44,15 @@ lista.appendChild(li);
 }
 
 function sortearAmigos() {
-    if (listaAmigxs.length === 0) { // Verifico si la lista de amigos está vacía 
-        // (no puedo poner === '' porque no es un stringlo que comparo, si no si tiene longitud 0 o no el Array)
+    if (listaAmigxs.length === 0) { 
         alert('No agregaste amigos para sortear');
         return;
     }
     let indice = Math.floor(Math.random() * listaAmigxs.length);
     let amigoSorteado = listaAmigxs[indice];
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = ''; // Limpio el contenido previo del resultado;
+    resultado.textContent = (`tu amigo sorteado es ${amigoSorteado}`); //  Muestro el nombre del amigo sorteado   
 }
 
 document.getElementById('botonAgregar').addEventListener('click', function() {
