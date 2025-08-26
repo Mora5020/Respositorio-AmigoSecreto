@@ -1,27 +1,6 @@
 let listaAmigxs = [];
 
 
-function agregarAmigo(){
-    let amigo = document.querySelector('#amigo').value.trim();
-    if (!amigo || amigo === '') {
-        alert('Por favor ingresa un nombre');
-        return true;
-        }  else if (listaAmigxs.includes(amigo)) {
-            alert('Este nombre fue ingresado, por favor ingresa otro');
-            return true;
-        }
-        else {
-        listaAmigxs.push(amigo); 
-        console.log(listaAmigxs); 
-        document.getElementById('amigo').value = '';
-        return;
-    } 
-    
-}
-
-
-document.getElementById('botonAgregar').addEventListener('click', agregarAmigo);
-
 
 
 function obtenerNombre() {
@@ -45,3 +24,17 @@ function limpiarCampo() {
     document.getElementById('amigo').value = "";
     return;
 }
+
+function agregarAmigo() {
+    let nombre = obtenerNombre();
+    if (verificarAmigo(nombre)) { 
+        listaAmigxs.push(nombre);
+        console.log(listaAmigxs);
+        limpiarCampo();
+    }
+}
+
+
+document.getElementById('botonAgregar').addEventListener('click', function() {
+    agregarAmigo();
+});
