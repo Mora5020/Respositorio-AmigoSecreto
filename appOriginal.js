@@ -33,7 +33,7 @@ function agregarAmigo() {
 
 function mostrarAmigos() {
 let lista = document.getElementById('listaAmigos');
-
+lista.innerHTML = '';
 }
 
 document.getElementById('botonAgregar').addEventListener('click', function() {
