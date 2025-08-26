@@ -43,6 +43,14 @@ lista.appendChild(li);
 
 }
 
+function sortearAmigos() {
+    if (listaAmigxs.length === 0) { // Verifico si la lista de amigos está vacía 
+        // (no puedo poner === '' porque no es un stringlo que comparo, si no si tiene longitud 0 o no el Array)
+        alert('No agregaste amigos para sortear');
+        return;
+    }
+}
+
 document.getElementById('botonAgregar').addEventListener('click', function() {
     agregarAmigo();
 });
