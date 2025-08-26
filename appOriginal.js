@@ -37,6 +37,7 @@ lista.innerHTML = '';
 for (let i = 0; i < listaAmigxs.length; i++) {
 let li = document.createElement('li');
 li.textContent = listaAmigxs[i];
+lista.appendChild(li);
 }
 
 }
