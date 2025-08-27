@@ -1,4 +1,4 @@
-# 🛠️ Proceso de Desarrollo \- Lista de Amigos
+# 🛠️ Proceso de Desarrollo \- Challenge Amigo Secreto
 
 A continuación, describo el proceso de desarrollo que seguí para crear la aplicación de lista de amigos:
 
